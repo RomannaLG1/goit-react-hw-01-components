@@ -1,3 +1,4 @@
+import { Container } from './App.styled';
 import Profile from './Profile';
 import user from '../data-json/user.json';
 import Statistics from './Statistics';
@@ -9,16 +10,7 @@ import transactions from '../data-json/transactions';
 
 export const App = () => {
   return (
-    <div
-    // style={{
-    //   height: '50vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101'
-    // }}
-    >
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -32,6 +24,6 @@ export const App = () => {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 };
