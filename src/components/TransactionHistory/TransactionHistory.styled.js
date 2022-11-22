@@ -15,7 +15,7 @@ const Table = styled.table`
   );
 `;
 
-const Thead = styled.thead`
+const TableHead = styled.thead`
   background: rgba(190, 160, 250, 1);
     background: linear-gradient(
     90deg,
@@ -24,7 +24,7 @@ const Thead = styled.thead`
     rgba(250, 219, 150, 1) 100%)
 `;
 
-const Tr = styled.tr`
+const TableRow = styled.tr`
   border: 1px solid rgba(260, 260, 260, 1);
   border-radius: 8px;
   transition: 250ms linear;
@@ -39,17 +39,17 @@ const Tr = styled.tr`
   }
   &:hover {
     cursor: pointer;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    box-shadow: 0px 3px 0px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
       0px 2px 1px rgb(0 0 0 / 20%);
   }
 `;
 
-const Th = styled.th`
+const TableHeader = styled.th`
   vertical-align: middle;
   padding: ${p => p.theme.space[2]}px;
 `;
 
-const Tbody = styled.tbody``;
-const Td = styled.td``;
+const TableBody = styled.tbody``;
+const TableData = styled.td``;
 
-export { Table, Thead, Tr, Th, Tbody, Td };
+export { Table, TableHead, TableRow, TableHeader, TableBody, TableData };
