@@ -27,19 +27,19 @@ export default function Profile(props) {
 
         <StatItem>
           <StatText>Followers</StatText>
-          <FaUserFriends />
+          <FaUserFriends size='25'/>
           <StatText>{stats.followers}</StatText>
         </StatItem>
 
         <StatItem>
           <StatText>Views</StatText>
-          <BsEye />
+          <BsEye size='25'/>
           <StatText>{stats.views}</StatText>
         </StatItem>
 
         <StatItem>
           <StatText>Likes</StatText>
-          <AiFillLike />
+          <AiFillLike size='25'/>
           <StatText>{stats.likes}</StatText>
         </StatItem>
 
